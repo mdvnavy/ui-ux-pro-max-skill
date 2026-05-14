@@ -48,6 +48,6 @@ out/
 .env.*.local
 
 # Local settings
-.claude/settings.local.json
-.claude/session-state/
+.agent/settings.local.json
+.agent/session-state/
 ui-ux-pro-max-website/*

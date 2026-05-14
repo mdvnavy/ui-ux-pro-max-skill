@@ -45,7 +45,7 @@ export const AI_TYPES: AIType[] = ['claude', 'cursor', 'windsurf', 'antigravity'
 
 // Legacy folder mapping for backward compatibility with ZIP-based installs
 export const AI_FOLDERS: Record<Exclude<AIType, 'all'>, string[]> = {
-  claude: ['.claude'],
+  claude: ['.agent'],
   cursor: ['.cursor', '.shared'],
   windsurf: ['.windsurf', '.shared'],
   antigravity: ['.agent', '.shared'],

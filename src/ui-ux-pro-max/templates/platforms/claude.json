@@ -3,7 +3,7 @@
   "displayName": "Claude Code",
   "installType": "full",
   "folderStructure": {
-    "root": ".claude",
+    "root": ".agent",
     "skillPath": "skills/ui-ux-pro-max",
     "filename": "SKILL.md"
   },

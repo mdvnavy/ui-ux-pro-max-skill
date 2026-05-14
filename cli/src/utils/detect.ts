@@ -10,7 +10,7 @@ interface DetectionResult {
 export function detectAIType(cwd: string = process.cwd()): DetectionResult {
   const detected: AIType[] = [];
 
-  if (existsSync(join(cwd, '.claude'))) {
+  if (existsSync(join(cwd, '.agent'))) {
     detected.push('claude');
   }
   if (existsSync(join(cwd, '.cursor'))) {
@@ -70,7 +70,7 @@ export function detectAIType(cwd: string = process.cwd()): DetectionResult {
 export function getAITypeDescription(aiType: AIType): string {
   switch (aiType) {
     case 'claude':
-      return 'Claude Code (.claude/skills/)';
+      return 'Claude Code (.agent/skills/)';
     case 'cursor':
       return 'Cursor (.cursor/skills/)';
     case 'windsurf':
